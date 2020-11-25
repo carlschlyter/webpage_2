@@ -1,21 +1,20 @@
+
 <?php get_header(); ?>
 
-<div class="container">
+<?php
 
-    <div class="row">
-    
-        <div class="col-lg-12">
+    if (have_posts()):
+
+        while (have_posts()) : the_post();
         
-            <?php get_template_part('includes/section', 'content'); ?>
+            the_content();
+        
+        endwhile;
 
-        </div>
+        else:
+
+    endif;
     
-    </div>
-
-
-
-</div>
-
-
+?>
 
 <?php get_footer(); ?>
