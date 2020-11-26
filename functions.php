@@ -10,7 +10,7 @@
  //Register css
 function load_css() {
 
-    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
+    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap/bootstrap.min.css', array(), false, 'all');
     wp_enqueue_style('bootstrap');
 
     wp_register_style('main', get_template_directory_uri() . '/css/main.css', array(), false, 'all');
@@ -64,20 +64,23 @@ function register_acf_block_types(){
         array(
             'name'              => 'hero-image-section',
             'title'             => __('Hero Image Section'),
-            'description'       => __('Setting Frontpage Hero and Welcome Message'),
+            'description'       => __('Settings Frontpage Hero and Welcome Message'),
             'render_template'   => get_template_directory() . '/template-parts/blocks/hero_image_section/hero_image_section.php',
+            'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/hero_image_section/hero_image_section.css',
             'category'          => 'design',
         )
     );    
 
     acf_register_block_type(
         array(
-            'name'              => 'testsidan',
-            'title'             => __('Testsidan'),
-            'description'       => __('Sida för att testa...'),
-            'render_template'   => '/template-parts/blocks/testsidan/testsidan.php',
+            'name'              => 'icon-bar-section',
+            'title'             => __('Icon Bar Section'),
+            'description'       => __('Settings Frontpage Icon Bar'),
+            'render_template'   => get_template_directory() . '/template-parts/blocks/icon_bar_section/icon_bar_section.php',
+            'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/icon_bar_section/icon_bar_section.css',
             'category'          => 'design',
         )
     );    
+    
 }
 

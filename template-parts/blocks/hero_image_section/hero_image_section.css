@@ -1,0 +1,66 @@
+
+
+#hero-container {
+    position: relative;
+    width: screen;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.2%;
+}
+
+#hero-sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-sub-container-img {
+    padding: 0;
+}
+
+#welcome-message {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    top: 37%;
+    text-align: center;
+    width: screen;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+}
+
+#welcome-text-message {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: smaller;
+    text-align: left;
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 405px) {
+    #welcome-message {
+        top: 47%;
+    }   
+}
+
+@media screen and (max-width: 321px) {
+    #welcome-message {
+        top: 50%;
+    }   
+}
+
+/* Makes font size responsive */
+#welcome-message h1 {
+    font-size: min(max(1rem, 4vw), 42px);
+}
+
+#welcome-text-message p {
+    font-size: min(max(0.4rem, 4vw), 12px);
+}
+
+@media screen and (max-width: 899px) {
+    #welcome-text-message {
+        display: none;
+    }
+}

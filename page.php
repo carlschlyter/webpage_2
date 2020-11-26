@@ -1,21 +1,17 @@
-<?php 
+<?php get_header(); ?>
 
-    get_header();
+<div class="container-fluid" id="page-container">
 
+    <?php if (have_posts()): ?>
 
-        if (have_posts()):
+        <?php while (have_posts()) : the_post(); ?>
 
-            while (have_posts()) : the_post();
-            
-                the_content();
-            
-            endwhile;
+            <?php the_content(); ?>
 
-            else:
+        <?php endwhile; ?>
 
-        endif;
-        
+    <?php endif; ?>
 
-    get_footer(); 
-
-?>
+</div>
+    
+<?php get_footer(); ?>
