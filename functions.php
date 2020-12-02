@@ -77,7 +77,7 @@ function register_acf_block_types(){
         array(
             'name'              => 'icon-bar-section',
             'title'             => __('Icon Bar Section'),
-            'description'       => __('Settings Frontpage Icon Bar'),
+            'description'       => __('Settings Icon Bar'),
             'render_template'   => get_template_directory() . '/template-parts/blocks/icon_bar_section/icon_bar_section.php',
             'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/icon_bar_section/icon_bar_section.css',
             'category'          => 'design',
@@ -88,9 +88,20 @@ function register_acf_block_types(){
         array(
             'name'              => 'offers-section',
             'title'             => __('Offers Section'),
-            'description'       => __('Settings Frontpage Offers Section'),
+            'description'       => __('Settings Offers Section'),
             'render_template'   => get_template_directory() . '/template-parts/blocks/offers_section/offers_section.php',
             'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/offers_section/offers_section.css',
+            'category'          => 'design',
+        )
+    );    
+
+    acf_register_block_type(
+        array(
+            'name'              => 'articles-section',
+            'title'             => __('Articles Section'),
+            'description'       => __('Settings Articles Section'),
+            'render_template'   => get_template_directory() . '/template-parts/blocks/articles_section/articles_section.php',
+            'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/articles_section/articles_section.css',
             'category'          => 'design',
         )
     );    
