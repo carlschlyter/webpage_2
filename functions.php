@@ -39,6 +39,8 @@ add_theme_support('post-thumbnails');
 
 //Add custom image sizes
 add_image_size('hero-image-max', 2560, 1200, true);
+add_image_size('icon-image', 60, 60, true);
+add_image_size('offers-image', 300, 150, true);
 
 
 //Menus
@@ -78,6 +80,17 @@ function register_acf_block_types(){
             'description'       => __('Settings Frontpage Icon Bar'),
             'render_template'   => get_template_directory() . '/template-parts/blocks/icon_bar_section/icon_bar_section.php',
             'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/icon_bar_section/icon_bar_section.css',
+            'category'          => 'design',
+        )
+    );    
+
+    acf_register_block_type(
+        array(
+            'name'              => 'offers-section',
+            'title'             => __('Offers Section'),
+            'description'       => __('Settings Frontpage Offers Section'),
+            'render_template'   => get_template_directory() . '/template-parts/blocks/offers_section/offers_section.php',
+            'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/offers_section/offers_section.css',
             'category'          => 'design',
         )
     );    

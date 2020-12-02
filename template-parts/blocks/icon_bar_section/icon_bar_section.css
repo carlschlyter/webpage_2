@@ -1,0 +1,33 @@
+#icon-row {
+    display: flex;
+    justify-content: center;
+}
+
+#icon-container {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    margin: 0.2% 2%;
+    border: 1px lightgray solid;
+}
+
+.icon-box:hover {
+    animation-name: breathe_in_icons;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.icon-box {
+    animation-name: breathe_out_icons;
+    animation-duration: 1s;
+}
+
+@media screen and (max-width: 767px) {
+    .icon-box {
+        animation-name: breathe_icons;
+        animation-duration: 3s; 
+    }
+}
