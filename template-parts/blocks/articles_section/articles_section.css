@@ -1,0 +1,25 @@
+
+#articles-container {
+    padding: 3%;
+}  
+
+#articles-container h2, h3 {
+    text-align: center;
+}
+
+#articles-container h3 {
+    font-style: italic;
+}
+
+.article-image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-image {
+    padding: 1%;
+    max-width: 100%;
+    height: auto;
+}
+
