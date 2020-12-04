@@ -19,7 +19,50 @@
 </head>
 <body>
 
-<header></header>
+<header>
+
+    <div class="container-fluid" id="nav-wrap">
+        
+        <nav class="navbar">
+
+            <span class="open-slide">
+                
+                <a href="#">
+        
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                    </svg>
+
+                    <div id="nav-container">
+
+                        <div>
+
+                                <?php 
+                                    wp_nav_menu(
+
+                                        array(
+                                            'theme_location' => 'top-menu',
+                                            'menu-class' => 'top-bar'               
+                                        )
+
+                                    );
+                                ?>
+                        
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </span>
+
+        </nav>
+
+    </div>
+
+</header>
 
 
 

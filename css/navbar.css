@@ -1,0 +1,41 @@
+
+.navbar {
+    background-color: black;
+}
+
+#nav-wrap {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.open-slide {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#nav-container {
+    width: 100%;
+}
+
+#nav-container > div ul {
+    list-style: none;
+    display: flex;
+}
+
+#menu-top-bar {
+    width: 100%; 
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+#menu-top-bar li {
+    padding: 1%;
+}
+
+#menu-top-bar li a {
+    text-decoration: none;
+    color: white;
+}
+
+
