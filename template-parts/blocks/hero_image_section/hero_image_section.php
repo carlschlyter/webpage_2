@@ -10,7 +10,7 @@ $text_2 = get_field('welcome_text_2');
 
 <div id="hero-container">
 
-    <div class="row" id="hero-sub-container">
+    <div class="row no-gutters" id="hero-sub-container">
 
         <div class="col-md-12" id="hero-sub-container-img">
 

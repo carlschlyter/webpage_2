@@ -1,12 +1,14 @@
 
 .navbar {
     background-color: black;
+    margin-right: 0;
+    overflow: hidden;
 }
 
 #nav-wrap {
     padding-left: 0;
     padding-right: 0;
-}
+ }
 
 .open-slide {
     display: flex;
@@ -37,5 +39,62 @@
     text-decoration: none;
     color: white;
 }
+
+#menu-top-bar li a:hover {
+    background-color: grey;    
+    color: white;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.8;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 1s;
+}
+
+.side-nav > div ul {
+    margin-top: 30px;
+}
+
+.side-nav > a,
+.side-nav > div ul li a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    color: #ccc;
+    transition: 0.5;
+}
+
+.side-nav > a:hover,
+.side-nav > div ul li a:hover {
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media (max-width: 568px) {
+
+    #menu-top-bar li {
+     
+        display: none;
+        
+    }
+
+}
+
 
 
