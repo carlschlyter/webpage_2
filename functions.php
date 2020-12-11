@@ -48,6 +48,7 @@ add_image_size('hero-image-max', 2560, 1200, true);
 add_image_size('icon-image', 60, 60, true);
 add_image_size('offers-image', 300, 150, true);
 add_image_size('article-image', 600, 450, true);
+add_image_size('miniature-image', 225, 150, true);
 
 
 //Menus
@@ -109,6 +110,17 @@ function register_acf_block_types(){
             'description'       => __('Settings Articles Section'),
             'render_template'   => get_template_directory() . '/template-parts/blocks/articles_section/articles_section.php',
             'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/articles_section/articles_section.css',
+            'category'          => 'design',
+        )
+    );    
+
+    acf_register_block_type(
+        array(
+            'name'              => 'my-services-miniatures-section',
+            'title'             => __('My Services Miniatures Section'),
+            'description'       => __('Settings Services Miniatures'),
+            'render_template'   => get_template_directory() . '/template-parts/blocks/my_services_miniatures_section/my_services_miniatures_section.php',
+            'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/my_services_miniatures_section/my_services_miniatures_section.css',
             'category'          => 'design',
         )
     );    

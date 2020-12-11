@@ -1,0 +1,94 @@
+
+#miniatures-row {
+    position: absolute;
+    top: 75px;
+    width:100%;
+}
+
+/* #my-services-container h1 {
+    font-size: min(max(2rem, 4vw), 4rem);
+}*/
+
+#miniatures-container {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px lightgray solid;
+ }
+
+ #miniatures-container img {
+    border-radius: 5%;
+}
+/*
+#my-services-intro-container {
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+    padding: 3%; 
+    margin-top: 0.5%;
+    flex-wrap: wrap;
+}
+
+
+.miniature-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+*/
+
+.miniature-box a {
+    text-decoration: none;
+    color: black;
+} 
+
+.miniature-box a p {
+    text-align: center;
+}
+
+
+/*
+.miniature-box div:hover {
+    animation-name: breathe_in_miniatures;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    }
+
+.miniature-box div {
+    animation-name: breathe_out_miniatures;
+    animation-duration: 1.5s;
+    }
+
+
+
+.my-services-imgtxt-container {
+    border: 1px lightgray solid;
+    margin-top: 0.5%;
+}
+
+.imgtxt-box {
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    padding: 2%;
+    border-bottom: 1px lightgray solid;
+}
+
+.imgtxt-img-box {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.imgtxt-img-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2%;
+} */
+
+
+
+
+
+
+
+
