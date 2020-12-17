@@ -12,7 +12,15 @@ body p {
     font-size: min(max(0.5rem, 4vw), 16px);
 }
 
+#front-page-container {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #page-container {
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 

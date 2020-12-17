@@ -1,0 +1,18 @@
+
+#intro-row {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    top: 5px;
+    padding: 3%; 
+    margin: 0;
+    position: relative;
+    border-bottom: 1px lightgray solid;
+    width: 100%;
+    /* margin-top: 0.5%;
+    flex-wrap: wrap; */
+}
+
+#intro-container {
+    width: 100%;
+}

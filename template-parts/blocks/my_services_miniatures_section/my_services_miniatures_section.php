@@ -4,37 +4,33 @@ $miniatures = get_field('service_miniatures');
 
 ?>
 
-<div class="container-fluid">
+<div class="row" id="miniatures-row">
 
-    <div class="row" id="miniatures-row">
+    <div class="col-md-12" id="miniatures-container">
 
-        <div class="col-md-12" id="miniatures-container">
+        <?php 
 
-            <?php 
+            foreach($miniatures as $miniature) :   
 
-             foreach($miniatures as $miniature) :   
+            $img = $miniature['service_miniature']['sizes']['miniature-image'];
+            $label = $miniature['label'];
+            $link = $miniature['link'];
 
-                $img = $miniature['service_miniature']['sizes']['miniature-image'];
-                $label = $miniature['label'];
-                $link = $miniature['link'];
+        ?>
 
-            ?>
+            <div class="miniature-box">
 
-                <div class="miniature-box">
+                <a href="<?php echo $link; ?>">
 
-                    <a href="<?php echo $link; ?>">
-    
-                        <img src="<?php echo $img; ?>" alt="">
+                    <img src="<?php echo $img; ?>" alt="">
 
-                        <p> <?php echo $label; ?> </p>
+                    <p> <?php echo $label; ?> </p>
 
-                    </a>
-                    
-                </div>
+                </a>
+                
+            </div>
 
-             <?php endforeach; ?>    
-
-        </div>
+            <?php endforeach; ?>    
 
     </div>
 
