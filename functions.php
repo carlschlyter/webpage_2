@@ -3,7 +3,7 @@
 /**
  * Theme Functions
  * 
- * @package Webpage_2
+ * @package Webpage_3
  */
 
 

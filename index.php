@@ -2,6 +2,6 @@
 /**
  * Theme Index File
  * 
- * @package Webpage_2
+ * @package Webpage_3
  */
  ?>

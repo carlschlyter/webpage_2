@@ -2,7 +2,7 @@
 /**
  * Footer Template
  * 
- * @package Webpage_2
+ * @package Webpage_3
  */
 ?>
 <footer></footer>
