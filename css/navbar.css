@@ -126,13 +126,13 @@
 
 }
 
-/* @media (min-width: 569px) {
+@media (min-width: 569px) {
 
     .open-slide > a > svg{
      
         visibility: hidden;
         
-    } */
+    }
 
 }
 
