@@ -22,7 +22,7 @@ $articles = get_field('articles');
             
             ?>
             
-            <h2> <?php echo $header; ?> </h2>
+            <h1> <?php echo $header; ?> </h1>
 
             <h3> <?php echo $intro; ?> </h3>
 
