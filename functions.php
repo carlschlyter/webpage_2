@@ -49,6 +49,8 @@ add_image_size('icon-image', 60, 60, true);
 add_image_size('offers-image', 300, 150, true);
 add_image_size('article-image', 600, 450, true);
 add_image_size('miniature-image', 180, 120, true);
+add_image_size('imgtxt-section-image', 375, 250, true);
+add_image_size('imgtxt-section-image-2', 450, 300, true);
 
 
 //Menus
@@ -132,6 +134,17 @@ function register_acf_block_types(){
             'description'       => __('Settings for section with a header and an intro text'),
             'render_template'   => get_template_directory() . '/template-parts/blocks/header_intro_section/header_intro_section.php',
             'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/header_intro_section/header_intro_section.css',
+            'category'          => 'design',
+        )
+    );    
+
+    acf_register_block_type(
+        array(
+            'name'              => 'text-and-image-section',
+            'title'             => __('Text and Image Section'),
+            'description'       => __('Settings for section with a header and text part on one side and an image part on the other'),
+            'render_template'   => get_template_directory() . '/template-parts/blocks/text_and_image_section/text_and_image_section.php',
+            'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/text_and_image_section/text_and_image_section.css',
             'category'          => 'design',
         )
     );    
