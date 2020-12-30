@@ -3,38 +3,52 @@
 $txtimgs = get_field('text_and_image');
 
 ?>
-<pre>
-    <?php 
-        // var_dump($txtimgs);    
-    ?>
-</pre>
 
 <div class="container-fluid">
 
-    <div class="row">
+    <div class="row" id="txt-img-row">
     
-        <div class="col-md-12">
+        <div class="col-md-12" id="txt-img-col">
 
             <?php foreach($txtimgs as $txtimg) : 
                 
             $header = $txtimg['header'];
             $descr = $txtimg['description']; 
-            $img = $txtimg['image']['sizes']['imgtxt-section-image'];
+            $img = $txtimg['image']['sizes']['imgtxt-section-image-2'];
             $side =$txtimg['side'];    
 
             ?>
 
                 <?php if ($side == 'right'): ?>    
 
-                    <h2> <?php echo $header ?></h2>
-                    <p> <?php echo $descr ?> </p>
-                    <img src="<?php echo $img ?>" alt="">
+                    <div class="row txt-img-container">
+
+                        <div class="txt-img-txtbox col-md-6">
+                            <h2> <?php echo $header ?></h2>
+                            <p> <?php echo $descr ?> </p>
+                        </div>
+        
+                        <div class="txt-img-imgbox col-md-6">
+                            <img src="<?php echo $img ?>" alt="">
+                        </div>
+
+                    </div>
+
 
                 <?php else : ?>
 
-                    <img src="<?php echo $img ?>" alt="">
-                    <h2> <?php echo $header ?></h2>
-                    <p> <?php echo $descr ?> </p>
+                    <div class="row txt-img-container">
+
+                        <div class="txt-img-imgbox col-md-6">
+                            <img src="<?php echo $img ?>" alt="">
+                        </div>
+
+                        <div class="txt-img-txtbox col-md-6">
+                            <h2> <?php echo $header ?></h2>
+                            <p> <?php echo $descr ?> </p>
+                        </div>
+
+                    </div>
 
                     <?php endif; ?>    
 

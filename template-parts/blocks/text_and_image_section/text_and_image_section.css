@@ -1,0 +1,23 @@
+
+#txt-img-row {
+    margin-top: 0;
+}
+
+#txt-img-col {
+    padding: 0; 
+}
+
+.txt-img-container {
+    display: flex;
+    padding: 3%;
+    margin: 0;
+    position: relative;
+    border-bottom: 1px lightgray solid;
+    width: 100%;
+
+}
+
+.txt-img-imgbox {
+    display: flex;
+    justify-content: center;
+}
