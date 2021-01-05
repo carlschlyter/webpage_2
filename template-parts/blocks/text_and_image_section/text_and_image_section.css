@@ -20,6 +20,13 @@
 .txt-img-imgbox {
     display: flex;
     justify-content: center;
-    max-width: 100%;
-    height: auto;
+    align-items: center;
 }
+
+.txt-img-imgbox img {
+    max-width: 450px;
+    max-height: 300px;
+
+}
+
+
